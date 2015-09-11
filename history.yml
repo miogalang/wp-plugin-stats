@@ -1,0 +1,31 @@
+---
+buzzwords: |+
+  data: {"items":[{"label":"Web 2.0","value":3},{"label":"Streamlininess","value":1},{"label":"Enterprise","value":1},{"label":"Pivoting","value":1},{"label":"Paradigm shift","value":2},{"label":"Synergy","value":1}],"id":"buzzwords","updatedAt":1441937564}
+
+convergence: |+
+  data: {"points":[{"x":10,"y":15},{"x":11,"y":42},{"x":12,"y":19},{"x":13,"y":39},{"x":14,"y":46},{"x":15,"y":41},{"x":16,"y":46},{"x":17,"y":41},{"x":18,"y":13},{"x":19,"y":29}],"id":"convergence","updatedAt":1441937564}
+
+valuation: |+
+  data: {"current":55,"last":0,"id":"valuation","updatedAt":1441937564}
+
+karma: |+
+  data: {"current":138044,"last":63599,"id":"karma","updatedAt":1441937564}
+
+synergy: |+
+  data: {"value":25,"id":"synergy","updatedAt":1441937564}
+
+welcome: |+
+  data: {"text":"Hey, Look what I can do!","id":"welcome","updatedAt":1441870718}
+
+downloads: |+
+  data: {"value":29876,"id":"downloads","updatedAt":1441874300}
+
+downloads-zendesk: |+
+  data: {"value":29996,"id":"downloads-zendesk","updatedAt":1441937548}
+
+downloads-zopim-live-chat: |+
+  data: {"value":342287,"id":"downloads-zopim-live-chat","updatedAt":1441937549}
+
+downloads-inbox-by-zendesk: |+
+  data: {"value":190,"id":"downloads-inbox-by-zendesk","updatedAt":1441937549}
+
