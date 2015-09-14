@@ -1,18 +1,18 @@
 ---
 buzzwords: |+
-  data: {"items":[{"label":"Web 2.0","value":3},{"label":"Streamlininess","value":1},{"label":"Enterprise","value":1},{"label":"Pivoting","value":1},{"label":"Paradigm shift","value":2},{"label":"Synergy","value":1}],"id":"buzzwords","updatedAt":1441937564}
+  data: {"items":[{"label":"Pivoting","value":24},{"label":"Streamlininess","value":27},{"label":"Turn-key","value":20},{"label":"Leverage","value":21},{"label":"Exit strategy","value":19},{"label":"Enterprise","value":23},{"label":"Paradigm shift","value":16},{"label":"Synergy","value":14},{"label":"Web 2.0","value":18}],"id":"buzzwords","updatedAt":1442217157}
 
 convergence: |+
-  data: {"points":[{"x":10,"y":15},{"x":11,"y":42},{"x":12,"y":19},{"x":13,"y":39},{"x":14,"y":46},{"x":15,"y":41},{"x":16,"y":46},{"x":17,"y":41},{"x":18,"y":13},{"x":19,"y":29}],"id":"convergence","updatedAt":1441937564}
+  data: {"points":[{"x":183,"y":6},{"x":184,"y":21},{"x":185,"y":48},{"x":186,"y":22},{"x":187,"y":26},{"x":188,"y":44},{"x":189,"y":32},{"x":190,"y":38},{"x":191,"y":9},{"x":192,"y":26}],"id":"convergence","updatedAt":1442217157}
 
 valuation: |+
-  data: {"current":55,"last":0,"id":"valuation","updatedAt":1441937564}
+  data: {"current":13,"last":33,"id":"valuation","updatedAt":1442217157}
 
 karma: |+
-  data: {"current":138044,"last":63599,"id":"karma","updatedAt":1441937564}
+  data: {"current":130807,"last":24250,"id":"karma","updatedAt":1442217157}
 
 synergy: |+
-  data: {"value":25,"id":"synergy","updatedAt":1441937564}
+  data: {"value":34,"id":"synergy","updatedAt":1442217157}
 
 welcome: |+
   data: {"text":"Hey, Look what I can do!","id":"welcome","updatedAt":1441870718}
@@ -21,11 +21,26 @@ downloads: |+
   data: {"value":29876,"id":"downloads","updatedAt":1441874300}
 
 downloads-zendesk: |+
-  data: {"value":29996,"id":"downloads-zendesk","updatedAt":1441937548}
+  data: {"value":30229,"id":"downloads-zendesk","updatedAt":1442217191}
 
 downloads-zopim-live-chat: |+
-  data: {"value":342287,"id":"downloads-zopim-live-chat","updatedAt":1441937549}
+  data: {"value":344716,"id":"downloads-zopim-live-chat","updatedAt":1442217192}
 
 downloads-inbox-by-zendesk: |+
-  data: {"value":190,"id":"downloads-inbox-by-zendesk","updatedAt":1441937549}
+  data: {"value":193,"id":"downloads-inbox-by-zendesk","updatedAt":1442217194}
+
+daily-downloads-zendesk: |+
+  data: {"points":[{"x":0,"y":"22"},{"x":1,"y":"27"},{"x":2,"y":"38"},{"x":3,"y":"54"},{"x":4,"y":"30"},{"x":5,"y":"52"},{"x":6,"y":"21"},{"x":7,"y":"32"},{"x":8,"y":"50"},{"x":9,"y":"26"},{"x":10,"y":"18"},{"x":11,"y":"39"},{"x":12,"y":"20"},{"x":13,"y":"11"},{"x":14,"y":"14"},{"x":15,"y":"27"},{"x":16,"y":"30"},{"x":17,"y":"26"},{"x":18,"y":"30"},{"x":19,"y":"28"},{"x":20,"y":"9"},{"x":21,"y":"15"},{"x":22,"y":"27"},{"x":23,"y":"29"},{"x":24,"y":"322"},{"x":25,"y":"154"},{"x":26,"y":"127"},{"x":27,"y":"54"},{"x":28,"y":"42"}],"displayedValue":45,"id":"daily-downloads-zendesk","updatedAt":1442217192}
+
+daily-downloads-zopim-live-chat: |+
+  data: {"points":[{"x":0,"y":"221"},{"x":1,"y":"408"},{"x":2,"y":"503"},{"x":3,"y":"541"},{"x":4,"y":"468"},{"x":5,"y":"443"},{"x":6,"y":"255"},{"x":7,"y":"279"},{"x":8,"y":"454"},{"x":9,"y":"551"},{"x":10,"y":"442"},{"x":11,"y":"385"},{"x":12,"y":"306"},{"x":13,"y":"181"},{"x":14,"y":"193"},{"x":15,"y":"372"},{"x":16,"y":"389"},{"x":17,"y":"374"},{"x":18,"y":"357"},{"x":19,"y":"365"},{"x":20,"y":"188"},{"x":21,"y":"169"},{"x":22,"y":"313"},{"x":23,"y":"357"},{"x":24,"y":"3337"},{"x":25,"y":"1636"},{"x":26,"y":"1146"},{"x":27,"y":"620"},{"x":28,"y":"513"}],"displayedValue":525,"id":"daily-downloads-zopim-live-chat","updatedAt":1442217194}
+
+daily-downloads-inbox-by-zendesk: |+
+  data: {"points":[{"x":0,"y":"1"},{"x":1,"y":"1"},{"x":2,"y":0},{"x":3,"y":"7"},{"x":4,"y":"8"},{"x":5,"y":"3"},{"x":6,"y":0},{"x":7,"y":"2"},{"x":8,"y":"1"},{"x":9,"y":"1"},{"x":10,"y":"2"},{"x":11,"y":"11"},{"x":12,"y":"4"},{"x":13,"y":"4"},{"x":14,"y":"3"},{"x":15,"y":"1"},{"x":16,"y":"2"},{"x":17,"y":0},{"x":18,"y":"12"},{"x":19,"y":"9"},{"x":20,"y":"3"},{"x":21,"y":0},{"x":22,"y":"1"},{"x":23,"y":0},{"x":24,"y":"6"},{"x":25,"y":0},{"x":26,"y":"1"},{"x":27,"y":"2"},{"x":28,"y":"1"},{"x":29,"y":0}],"displayedValue":2,"id":"daily-downloads-inbox-by-zendesk","updatedAt":1442217196}
+
+version-downloads-zendesk: |+
+  data: {"items":[{"label":"1.0","value":453},{"label":"1.3","value":1149},{"label":"1.4","value":2418},{"label":"1.5","value":8222},{"label":"1.6","value":17986}],"id":"version-downloads-zendesk","updatedAt":1442217191}
+
+version-downloads-zopim-live-chat: |+
+  data: {"items":[{"label":"1.0","value":689},{"label":"1.1","value":4826},{"label":"1.2","value":41365},{"label":"1.3","value":255435},{"label":"1.4","value":42745}],"id":"version-downloads-zopim-live-chat","updatedAt":1442217193}
 
