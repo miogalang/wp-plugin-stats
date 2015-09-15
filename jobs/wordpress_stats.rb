@@ -1,6 +1,7 @@
 require "net/http"
+require "time"
 
-SCHEDULER.every '1m', :first_in => 0 do |job|
+SCHEDULER.every '5m', :first_in => 0 do |job|
   slugs = ['zendesk', 'zopim-live-chat', 'inbox-by-zendesk']
 
   slugs.each do |slug|
@@ -10,21 +11,19 @@ SCHEDULER.every '1m', :first_in => 0 do |job|
     response = JSON.parse res.body
     totalDownloads = response["downloaded"]
 
-    send_event('downloads-' + slug, {value: totalDownloads})
+    send_event('downloads-' + slug, current: totalDownloads)
 
     # Version Stats
     uri = URI("https://api.wordpress.org/stats/plugin/1.0/" + slug)
     res = Net::HTTP.get_response(uri)
     response = JSON.parse res.body
 
-    puts slug
     if !response.empty?
       versionsData = []
       response.each do |version, percentage|
         downloadCount = percentage * totalDownloads / 100
         versionsData << {label: version, value: downloadCount.round(0)}
       end
-      puts versionsData
       send_event("version-downloads-" + slug, items: versionsData)
     end
 
@@ -36,8 +35,16 @@ SCHEDULER.every '1m', :first_in => 0 do |job|
     sum = 0
     response.each_with_index do |(date, downloadsCount), index|
       sum += downloadsCount.to_i
-      downloadsData << {x: index, y: downloadsCount}
+      timestamp = Time.parse(date).to_i
+      downloadsData << {x: timestamp, y: downloadsCount.to_i}
     end
-    send_event("daily-downloads-" + slug, points: downloadsData, displayedValue: sum/30)
+
+    series = [
+      {
+        name: "Daily Downloads: " + slug,
+        data: downloadsData
+      }
+    ]
+    send_event("daily-downloads-" + slug, series: series, displayedValue: sum/30)
   end
 end
