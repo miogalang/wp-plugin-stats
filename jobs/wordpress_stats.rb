@@ -41,7 +41,7 @@ SCHEDULER.every '5m', :first_in => 0 do |job|
 
     series = [
       {
-        name: "Daily Downloads: " + slug,
+        name: "Daily Downloads",
         data: downloadsData
       }
     ]
